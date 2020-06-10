@@ -1,0 +1,259 @@
+body{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: 400;
+    padding: 25px;
+}
+
+p{
+    font-weight: 300;
+}
+
+h2{
+    font-weight: 500;
+}
+
+.icon{
+    border-radius: 50%;
+    border: 1px solid white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.move-left{
+    float: right;
+    cursor:pointer;
+}
+
+.name{
+    border-bottom: 1px solid white;
+    margin: 65px 20px;
+    font-weight: 300;
+    letter-spacing: 10px;
+}
+
+.hi-section{
+    padding-bottom: 75px;
+    background: rgb(34, 34, 34);
+    text-align: center;
+}
+
+.hi{
+    font-size: 10em;
+    display: inline;
+    font-weight: 200;
+}
+
+.iam{
+    font-size: 1em;
+    display: inline;
+}
+
+.overlay {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: rgb(34, 34, 34);
+    overflow-x: hidden;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 15%;
+    text-align: center;
+    margin-top: 30px;
+    text-transform: lowercase;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    display: block;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: white;
+}
+  
+@media screen and (max-height: 450px) {
+        /* .overlay a {font-size: 20px} */
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.gray-text{
+    color: gray;
+}
+
+.menus{
+    display: none;
+}
+
+/* about section-------------------------------------------------------------------------------------------------------------------- */
+
+.about-homepage{
+    padding-bottom: 10px;
+    margin: 80px 0;
+    background: rgb(34, 34, 34); 
+}
+
+.block-pic{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.gray-pic{
+    width: 120px;
+    height: 105px;
+    background: brown;
+}
+
+img.img-mosa{
+    width: 120px;
+    height: 105px;
+    position: relative;
+    right: 100px;
+    top: 15px;
+}
+
+p.about-p{
+    margin: 0 50px;
+}
+
+.paraabout-home{
+    margin-top: 30px;
+}
+
+.butt-style{
+    background-color: blue;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto 20px auto;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.butt-about{
+    line-height: 50px;
+
+}
+
+/* --------------------------------------------------------------media queries */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // --------------------------------------------------------------Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (orientation: landscape) { 
+}
+
+/* // --------------------------------------------------------------Medium devices (tablets) */
+@media (min-width: 768px) {
+}
+
+/* // --------------------------------------------------------------Large devices (ipad pro) */
+@media (min-width: 992px) { 
+   
+}
+
+/* // --------------------------------------------------------------Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    body{
+        margin: 0 50px;
+    }
+    .icon.bar-removed{
+        display: none;
+    }
+    
+    .icon{
+        float: right;
+    }
+
+    .name{
+        padding-bottom: 50px;
+        margin: 0px 0px;
+    }
+
+    .menus{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        letter-spacing: 5px;
+        /* text-align: center; */
+    }
+
+    .menu{
+        margin-left: 10px;
+        font-weight: 100;
+    }
+
+    .hi-section{
+        margin-top: 100px;
+    }
+
+    /* about section  */
+
+    .block-pic{
+        position: absolute;
+        left: 300px;
+    }
+    
+    .gray-pic{
+        width: 250px;
+        height: 260px;
+    }
+    
+    img.img-mosa{
+        width: 250px;
+        height: 260px;  
+        right: 200px;
+        top: 40px;
+    }
+
+    .about-mehome{
+        position: relative;
+        left: 150px;
+        top: 60px;
+    }
+
+    .paraabout-home{
+        margin-top: 50px;
+    }
+
+    p.about-p{
+        font-size: 0.8em;
+        margin-left: 650px;
+        margin-right: 260px;
+    }
+
+    .about-bnt{
+        display: none;
+    }
+
+    .about-homepage{
+        height: 30vw;
+    }
+}
+/* --------------------------------------------------------------Extra large devices landscape */
+@media (min-width: 1200px) and (orientation: landscape) { 
+}
+
+/* --------------------------------------------------------------Internet Explorer */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+}
