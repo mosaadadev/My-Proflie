@@ -3,9 +3,11 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: white;
     margin: 0;
+    overflow-x: hidden;
 }
 
 h2{
+    color: linear-gradient(90deg, rgba(243,0,255,1) 0%, rgba(0,255,230,1) 50%, rgba(93,66,250,1) 100%);
     font-size: 2em;
     font-weight: 400;
     padding: 25px;
@@ -13,6 +15,7 @@ h2{
 
 p{
     font-weight: 300;
+    font-size: 12px;
 }
 
 h2{
@@ -45,7 +48,7 @@ h2{
 }
 
 .hi{
-    font-size: 10em;
+    font-size: 13em;
     display: inline;
     font-weight: 200;
 }
@@ -104,7 +107,7 @@ h2{
     display: none;
 }
 
-/* about section-------------------------------------------------------------------------------------------------------------------- */
+/* about section home-------------------------------------------------------------------------------------------------------------------- */
 
 .about-homepage{
     padding-bottom: 10px;
@@ -119,7 +122,7 @@ h2{
 
 .gray-pic{
     width: 120px;
-    height: 105px;
+    height: auto;
     background: brown;
 }
 
@@ -146,12 +149,123 @@ p.about-p{
     margin: 20px auto 20px auto;
     border-radius: 20px;
     text-align: center;
-
 }
 
 .butt-about{
     line-height: 50px;
+}
 
+/* ADA gradu home section-------------------------------------------------------------------------------------------------------------------- */
+.ada-grad{
+    background: rgb(34, 34, 34);
+    height: auto;
+    margin-bottom: 80px;
+    padding-bottom: 30px;
+}
+img.about-logo{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* testi home section-------------------------------------------------------------------------------------------------------------------- */
+
+.testi{
+    background: rgb(34, 34, 34);
+    margin-bottom: 80px;
+}
+
+.each-testi{
+    display: inline-flex;
+    padding-left: 50px;
+}
+
+.testi-pic{
+    width: auto;
+    height: 55%;
+    position: relative;
+    top: 20px;
+}
+
+.oran-block{
+    background-color: orangered;
+    width: 100px;
+    height: 100px;
+}
+
+.logo-testi{
+    background: white;
+    width: 100px;
+    height: 100px;
+}
+
+.testi-icon {
+    position: relative;
+    left: 40px;
+    top: 30;
+    font-size: 25px;
+}
+
+.oran-block p{
+    position: relative;
+    top:30;
+}
+
+
+.para-testi{
+    margin-right: 40px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+.each-testi{
+    margin-bottom: 30px;
+}
+
+.lec{
+    width: 100px;
+    height: auto;
+    position: relative;
+    top: 3px;
+}
+
+/* get in touch home section-------------------------------------------------------------------------------------------------------------------- */
+
+.get-in-touch{
+    background: rgb(34, 34, 34);
+    padding-bottom: 30px;
+    margin-bottom: 80px;
+}
+
+.get-margin{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+.name-inp{
+    width: 260px;
+    margin-bottom: 10px;
+}
+
+.Your-message{
+    height: 120px;
+}
+
+.send-butt{
+    line-height: 55px;
+}
+
+/* the footer  --------------------------------------------------------------------------------------------------------------------------------------------------*/
+.foot{
+    padding-bottom: 50px;
+}
+
+.p-foot{
+    padding-top: 10px;
+    display: inline;
 }
 
 /* --------------------------------------------------------------media queries */
@@ -181,7 +295,7 @@ p.about-p{
         display: none;
     }
     
-    .icon{
+    .icons{
         float: right;
     }
 
@@ -207,7 +321,7 @@ p.about-p{
         margin-top: 100px;
     }
 
-    /* about section  */
+    /* about home section ----------------------------------------------------------------------------------------------------------------------- */
 
     .block-pic{
         position: absolute;
@@ -215,13 +329,13 @@ p.about-p{
     }
     
     .gray-pic{
-        width: 250px;
+        width: 260px;
         height: 260px;
     }
     
     img.img-mosa{
-        width: 250px;
-        height: 260px;  
+        width: auto;
+        height: 250px;  
         right: 200px;
         top: 40px;
     }
@@ -249,6 +363,68 @@ p.about-p{
     .about-homepage{
         height: 30vw;
     }
+
+/* ADA gradu home section-------------------------------------------------------------------------------------------------------------------- */
+    img.about-logo{
+        float: left;
+        width: 350px;
+        margin-left: 260px;
+    }
+
+    .grad-butt{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: relative;
+        right: 360px;
+    }
+
+    .butt-style{
+        margin: 0;
+    }
+
+/* testimonials home page desktop ----------------------------------------------------------------------------------------------------------------*/
+    .logo-testi{
+        width: 120px;
+        height: 120px;
+    }
+    
+    .testi-icon {
+        left: 45px;
+        font-size: 30px;
+    }
+
+    .desk-testi{
+        display: inline-flex;
+        margin-left: 220px;
+        margin-right: 220px;
+    }
+
+    .oran-block{
+        width: 120px;
+        height: 120px;
+    }
+
+    .lec{
+        width: 120px;
+    }
+/* get in touch home section-------------------------------------------------------------------------------------------------------------------- */
+    .get-margin{
+        margin-left: 260px;
+        margin-right: 260px;
+        text-align: justify;
+    }
+
+    .name-inp{
+        display: flex; 
+        width: 900px;       
+    }
+
+    .send-butt{
+        display: flex,
+        
+    }
+
 }
 /* --------------------------------------------------------------Extra large devices landscape */
 @media (min-width: 1200px) and (orientation: landscape) { 
