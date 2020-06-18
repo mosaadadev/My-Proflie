@@ -31,6 +31,10 @@ a, a:hover{
     color: white;
 }
 
+hr{
+    display: none;
+}
+
 .icon{
     border-radius: 50%;
     border: 1px solid white;
@@ -42,7 +46,7 @@ a, a:hover{
     border-radius: 50%;
     border: 1px solid white;
     font-size: 20px;
-    padding: 5px 7px;
+    padding: 5px 7px;  
 }
 
 .move-left{
@@ -58,21 +62,19 @@ a, a:hover{
 }
 
 .hi-section{
-    padding-bottom: 75px;
+    padding-bottom: 50px;
     background: rgb(34, 34, 34);
     text-align: center;
 }
 
 .hi{
-    font-size: 13em;
+    font-size: 10em;
     display: inline;
     font-weight: 200;
 }
 
 .iam{
     font-size: 1em;
-    display: inline;
-    /* color: rgba(250, 0, 129); */
     color:rgba(4, 255, 0);
 }
 
@@ -113,7 +115,8 @@ a, a:hover{
         .overlay .closebtn {
         font-size: 40px;
         top: 15px;
-        right: 35px;
+        right: 35px; 
+         
     }
 }
 
@@ -139,24 +142,32 @@ a, a:hover{
 
 div.block-pic{
     display: flex;
-    justify-content: flex-end;
+}
+
+.middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin-left: 265px; */
 }
 
 .gray-pic{
-    width: 120px;
-    height: auto;
+    width: 150px;
+    height: 140px;
     background: gray;
+    position: relative;
+    left:15%;
 }
 
 img.img-mosa{
-    width: 120px;
-    height: 105px;
+    width: 150px;
+    height: auto;
     position: relative;
-    right: 100px;
-    top: 15px;
+    right: 50px;
+    top: 20px;
 }
 
-p.about-p{
+.about-p{
     margin: 0 50px;
 }
 
@@ -188,6 +199,7 @@ p.about-p{
     margin-bottom: 80px;
     padding-bottom: 30px;
 }
+
 img.about-logo{
     width: 50%;
     height: auto;
@@ -206,13 +218,12 @@ img.about-logo{
 .each-testi{
     display: inline-flex;
     padding-left: 50px;
+    padding-top: 30px;
 }
 
 .testi-pic{
-    width: auto;
-    height: 55%;
-    position: relative;
-    top: 20px;
+    width: 100%;
+    height: auto;
 }
 
 .oran-block{
@@ -222,11 +233,6 @@ img.about-logo{
     height: 100px;
 }
 
-.logo-testi{
-    background: white;
-    width: 100px;
-    height: 100px;
-}
 
 .testi-icon {
     position: relative;
@@ -261,13 +267,22 @@ img.about-logo{
     top: 3px;
 }
 
+#who-tags{
+    font-weight: bold;
+    margin: 0 20%;
+}
+
+#who-tagz{
+    font-weight: bold;
+    margin: 0 15%;
+}
 
 /* get in touch home section-------------------------------------------------------------------------------------------------------------------- */
 
 .get-in-touch{
     background: rgb(34, 34, 34);
     padding-bottom: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .get-margin{
@@ -276,8 +291,18 @@ img.about-logo{
     text-align: justify;
 }
 
+input, textarea{
+    background-color: gray;
+    border-style: none;
+}
+
+::placeholder{
+    color: white;
+}
+
 .name-inp{
-    width: 260px;
+    width: 100%;
+    padding: 1%;
     margin-bottom: 10px;
 }
 
@@ -289,7 +314,7 @@ img.about-logo{
     line-height: 55px;
 }
 
-/* the footer  --------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* the footer----------------------------------------------------------------------------------------------------------------------------------*/
 .foot{
     padding-bottom: 50px;
 }
@@ -327,6 +352,7 @@ img.about-logo{
     body{
         margin: 0 50px;
     }
+
     .icon.bar-removed{
         display: none;
     }
@@ -335,10 +361,17 @@ img.about-logo{
         float: right;
     }
 
+    hr{
+        display: block;
+        background-color: white;
+    }
     .name{
         padding-top: 20px;
         padding-bottom: 50px;
         margin: 0px 0px;
+        border-bottom: none;
+        /* position: relative;
+        left: 7%; */
     }
 
     .menus{
@@ -346,7 +379,7 @@ img.about-logo{
         flex-direction: row;
         justify-content: center;
         letter-spacing: 5px;
-        /* text-align: center; */
+        margin-top: 20px;
     }
 
     .menu{
@@ -378,18 +411,18 @@ img.about-logo{
 
     .block-pic{
         position: absolute;
-        left: 300px;
+        left: 220px;
     }
     
     .gray-pic{
-        width: 260px;
+        width: 280px;
         height: 260px;
     }
     
     img.img-mosa{
         width: auto;
         height: 250px;  
-        right: 200px;
+        right: 150px;
         top: 40px;
     }
 
@@ -403,7 +436,7 @@ img.about-logo{
         margin-top: 50px;
     }
 
-    p.about-p{
+    .about-p{
         font-size: 0.8em;
         margin-left: 650px;
         margin-right: 260px;
@@ -418,18 +451,23 @@ img.about-logo{
     }
 
 /* ADA gradu home section-------------------------------------------------------------------------------------------------------------------- */
+    .ada-grad{
+        padding-bottom: 120px;
+    }
+
     img.about-logo{
         float: left;
-        width: 350px;
+        width: 20%;
         margin-left: 260px;
     }
 
     .grad-butt{
+        margin-top: 40px;
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: center;
         position: relative;
-        right: 360px;
+        right: 115px;
     }
 
     .butt-style{
@@ -438,7 +476,7 @@ img.about-logo{
 
 /* testimonials home page desktop ----------------------------------------------------------------------------------------------------------------*/
     .logo-testi{
-        width: 120px;
+        width:280px;
         height: 120px;
     }
     
@@ -468,9 +506,12 @@ img.about-logo{
         text-align: justify;
     }
 
+    /* .textbox{
+        display: block;
+    } */
+
     .name-inp{
-        display: flex; 
-        width: 900px;       
+        display: block;      
     }
 
     .send-butt{
@@ -481,9 +522,16 @@ img.about-logo{
     #grad-butt{
         margin-left: 20px; 
     }
+
+    .touchdiv{
+        margin: 0 150px;
+    }
 }
 /* --------------------------------------------------------------Extra large devices landscape */
 @media (min-width: 1200px) and (orientation: landscape) { 
+    /* .about-homepage{
+        padding-bottom: 100px; 
+    } */
 }
 
 /* --------------------------------------------------------------Internet Explorer */
