@@ -73,7 +73,7 @@ hr{
 }
 
 .hi{
-    font-size: 11em;
+    font-size: 1200%;
     display: inline;
     font-weight: 200;
 }
@@ -203,14 +203,16 @@ img.img-mosa{
     height: auto;
     margin-bottom: 80px;
     padding-bottom: 30px;
+    display: inline-flex;
 }
 
 img.about-logo{
-    width: 50%;
+    width: 150px;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px; 
 }
 
 /* testi home section-------------------------------------------------------------------------------------------------------------------- */
@@ -315,8 +317,14 @@ input, textarea{
     height: 120px;
 }
 
-.send-butt{
-    line-height: 55px;
+.button-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#send-butt{
+    border-style: none;
 }
 
 /* the footer----------------------------------------------------------------------------------------------------------------------------------*/
@@ -332,6 +340,98 @@ input, textarea{
     color: rgba(4, 255, 0);
     /* color: rgba(250, 0, 129); */
 }
+
+/* about page ----------------------------------------------------------------------------------------------------------------------------------*/
+.aboutpage{
+    background-color: rgb(34, 34, 34);
+    padding-bottom: 50px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+} 
+
+#about-icons{
+    margin-top: 20px;
+    font-size: 250%;
+    border-radius: 100%;
+    padding: 25px 20px;
+    background-color: rgba(4, 255, 0);
+    color: black;
+}
+
+#about-icon{
+    margin-top: 20px;
+    font-size: 250%;
+    border-radius: 100%;
+    padding: 20px;
+    background-color: rgba(4, 255, 0);
+    color: black;
+}
+
+h3{
+    color: rgba(4, 255, 0);
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.ptag-margins{
+    margin: 0 50px;
+    text-align: justify;
+}
+
+#journey{
+    margin: 0 50px;
+    text-align: center;
+}
+
+
+
+/* resume page ---------------------------------------------------------------------------------------------------------------------------------*/
+
+.resumepage{
+    background: rgb(34, 34, 34);
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+.resumeMargin{
+    margin: 0 50px;
+}
+
+.inline-skills{
+    display: inline-flex;
+}
+
+#stars-skill{
+    color: rgba(4, 255, 0);
+    padding-right: 2px;
+}
+
+.star-lable{
+    padding-left: 10px;
+    position: relative;
+    top: -3px;
+    font-weight: 500;
+}
+
+#bold{
+    font-weight: 500;
+}
+
+/* my journy Page *********************************************************************************************************************************/
+
+.my-journey{
+    background: rgb(34, 34, 34);
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+
+
+
+
+
+
 
 /* --------------------------------------------------------------media queries */
 
@@ -456,7 +556,7 @@ input, textarea{
     }
 
     .about-homepage{
-        height: 30vw;
+      padding-bottom: 10vh;
     }
 
 /* ADA gradu home section-------------------------------------------------------------------------------------------------------------------- */
@@ -467,6 +567,8 @@ input, textarea{
     img.about-logo{
         float: left;
         width: 20%;
+        position: relative;
+        top: 6vh;
         margin-left: 260px;
     }
 
@@ -476,7 +578,7 @@ input, textarea{
         flex-direction: row;
         justify-content: center;
         position: relative;
-        right: 120px;
+        left: 12vw;
     }
 
     .butt-style{
@@ -535,6 +637,111 @@ input, textarea{
     .touchdiv{
         margin: 0 150px;
     }
+    /* about page -----------------------------------------------------------------------------------------------------------------------------------*/
+    .aboutpage{
+        padding-top: 60px;
+    } 
+
+    .junior-block{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(4, 255, 0);
+        margin: 0 200px;
+        padding: 20px 0 40px 0;
+    }
+
+    #junior-text{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: 200 bold;
+        color: black;
+        position: relative;
+        top: 3vh;
+    }
+
+    #about-icons{
+        font-size: 180%;
+        border-radius: 50%;
+        padding: 20px 15px;
+        background-color: white;
+    }
+
+    .about-section{
+        display: flex;
+        padding-top: 40px;
+    }
+
+    .section-about{
+        width: 500px;
+        margin-left: 150px;
+    }
+
+    .section-abouts{
+        margin-right: 150px;
+    }
+
+    .ptag-margin{
+        text-align: start;
+    
+    }
+
+
+
+    /* resume page ---------------------------------------------------------------------------------------------------------------------------------*/
+    .one-half{
+        display: flex;
+        justify-content: center;
+    }
+
+    .half-set{
+        width: 500px;
+    }
+
+    .inline-skills{
+        padding-left: 30%;
+    }
+
+    .resumeMargin{
+        margin: 0 100px;
+    }
+
+    #skill-block{
+        background-color: rgba(4, 255, 0);
+        padding-bottom: 25px;
+        margin-left: 60px;
+    }
+
+    #stars-skill{
+        color: white;
+    }
+
+    .colummove-left{
+        margin-left: 60px;
+    }
+
+    #add-color{
+        color: white;
+    }
+
+    .resumepage{
+        padding-top: 60px;
+    }
+
+
+/* journey page  **********************************************************************************************************************************/
+    .content-journey{
+        display: flex;
+        margin: 0 100px;
+    }
+
+    .half-journey{
+        width: 700px;
+    }
+
+
+
+
+
 }
 /* --------------------------------------------------------------Extra large devices landscape */
 @media (min-width: 1200px) and (orientation: landscape) { 

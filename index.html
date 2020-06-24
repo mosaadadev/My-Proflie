@@ -74,9 +74,9 @@
         <br>
         <div class="paraabout-home">
             <div class="about-p">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eum aperiam placeat quibusdam, amet illum animi? Sunt veritatis assumenda quam quas sit, laboriosam, molestias mollitia eum id consequuntur consectetur accusantium.</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit possimus, doloremque cupiditate corrupti, sapiente cum explicabo minima quibusdam eos quaerat laborum laboriosam optio soluta, aspernatur voluptatibus fuga blanditiis tempore.</p>
+                <p>I am Mosa - a very positive, free spirited person who loves being around and meeting new people. A daughter, sister and an aunty - I enjoy spending my free time around loved ones. For fun I like going out for drinks, going to the cinema or being outdoors - I'm a very adventurous person!  I love socializing with others and playing games - though I can be quite competitive!</p>
+               
+                <p>I am a team player who always looks out for the best interests of her team. I enjoy being challenged and I’ve got a ‘never going to give up’ mind set. When working on a project, I am goal driven and time conscious. I enjoy learning new things, no matter how hard they appear to be initially. I am very understanding and I am a good listener. I’m the type of person that  looks for solutions instead of complaining. A hard worker, who is good at multitasking and easy to work with.</p>
             </div>
         </div>
 
@@ -89,24 +89,26 @@
 <!-- the graduate ada home page ------------------------------------------------------------------------------------------------------------------->
 
     <div class="ada-grad">
-        <h2 class="text-center about-mehome">I am an ADA graduate!</h2>
-        <img class="about-logo" src="assets/images/adanew.png" alt="African Developers Academy's logo">
-        <div class="paragrad-home">
-            <p class="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias similique esse, reiciendis veniam rerum est aspernatur accusantium odit ducimus molestiae minima quaerat perferendis!</p>
-            <br>
-            <p class="about-p">Velit nostrum numquam dolorum voluptate amet vitae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat aliquid iusto quas odio, beatae facere voluptates voluptas vitae doloribus iste, unde deleniti, ullam exercitationem. Saepe perferendis aspernatur iure debitis ea.</p>
-        </div>
-
-        <div class="grad-butt">
-            <div class="butt-style butt-about grad-buttt">
-                    <p class="butt-about">my jouney at ADA</p>
+        <div>
+            <h2 class="text-center about-mehome">I am an ADA graduate!</h2>
+            <img class="about-logo" src="assets/images/adanew.png" alt="African Developers Academy's logo">
+            <div class="paragrad-home">
+                <p class="about-p">The journey at ADA was amazing and I got to learn a lot more about myself. It was not just a school -  it became a second home where you could be yourself and be free to make mistakes without being judged. My peers and lecturers made it easy for you to be open about anything whether it was about school or home. Showed that if you want something you should do it and believe that. ADA has showed that I am a strong person who is unique for a reason.</p>
+                <br>
+                <p class="about-p">Starting at ADA was never the hardest part - pushing through and always believing the school made the right decision by choosing me to be part of the experience was! The lecturers  always told us we were the best, which always motivated me because I  knew I was amongst the 2.2% of the people that were hand picked to participate. I never felt stupid being there - it weas always a fun environment to learn new front-end development skills. Sadly covid shortened the experience for me and only hoped that ADA was a stepping stone on the new career path I've chosen. I'm very grateful for the opportunities I got to learn.</p>
             </div>
-        
-            <div id="grad-butt" class="butt-style">
-                    <p class="butt-about">view my CV</p>
+    
+            <div class="grad-butt">
+                <div class="butt-style butt-about grad-buttt">
+                        <p class="butt-about">my jouney at ADA</p>
+                </div>
+            
+                <div id="grad-butt" class="butt-style">
+                        <p class="butt-about">view my CV</p>
+                </div>
             </div>
         </div>
-
+      
     </div>
 
 <!-- the Testimonials home page ------------------------------------------------------------------------------------------------------------------>
@@ -186,22 +188,24 @@
         
         <div class="touchdiv">
             <div class="get-margin">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sit ipsam, cupiditate quo nesciunt consequuntur. Nulla beatae voluptas earum libero quae doloribus quia, facilis magni, laboriosam mollitia itaque saepe alias.</p>
+                <p>Get in touch if  you want a new and beautiful website, or you need me to improve your website, add new features or maintain it. You can contact me if you have a job offer or want me to be a part of a development team.</p>
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit suscipit illo error numquam, ea veritatis magni, odio laboriosam quas aut iste tempora veniam? Odit eveniet vel error quisquam sed hic.</p>
-                <form action="subit ">
+                <p>I am also available to help test websites for quality assurance and functionality. Should you have any questions or need any more information, feel free to send me a message! I will reply as soon as possible.</p>
+
+                <form action="https://formspree.io/mnqgzewz" method="POST">
                     <div class="textbox">
-                        <input type="text" placeholder="name" class="name-inp">
-                        <input type="text" placeholder="email" class="name-inp email-inp">
-                        <textarea cols="30" rows="10" placeholder="your message" class="name-inp Your-message"></textarea>
+                        <input type="text" name="name" placeholder="name" class="name-inp" required>
+                        <input type="email" name="_replyto" placeholder="email" class="name-inp email-inp" required>
+                        <textarea name="message" cols="30" rows="10" placeholder="your message" class="name-inp Your-message" required></textarea>
                     </div>
                     </div>
-                    <div class="butt-style send-butt">
-                        <p class="butt-about">send!</p>
+                    <input type="text" name="_gotcha" style="display:none"/>
+                    <div class="button-wrapper">
+                        <button type="submit" id="send-butt" class="butt-style"><span class="butt-about">send!</span></button>
                     </div>
+                        
                 </form>
         </div>
-            
     </div>
 
 <!-- footer -------------------------------------------------------------------------------------------------------------------------------------->
@@ -219,8 +223,8 @@
         </div>
         
     </div>
-
      
+
 
     <script src="Scripts/sandbox.js"> </script>
 </body>
