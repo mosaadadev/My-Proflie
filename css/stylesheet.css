@@ -427,7 +427,9 @@ h3{
     padding-top: 20px;
 }
 
-
+.content-journey{
+    margin: 0 50px;
+}
 
 
 
@@ -682,7 +684,10 @@ h3{
 
     .ptag-margin{
         text-align: start;
-    
+    }
+
+    #marg{
+        margin-left: 50px;
     }
 
 
@@ -736,6 +741,7 @@ h3{
 
     .half-journey{
         width: 700px;
+        margin: 50px;
     }
 
 
