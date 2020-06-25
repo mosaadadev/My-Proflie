@@ -518,7 +518,7 @@ h3{
 
     .block-pic{
         position: absolute;
-        left: 220px;
+        left: 120px;
     }
     
     .gray-pic{
@@ -527,9 +527,9 @@ h3{
     }
     
     img.img-mosa{
-        width: auto;
-        height: 230px;  
-        right: 150px;
+        width:22%;
+        height: auto;  
+        right: 0px;
         top: 40px;
     }
 
