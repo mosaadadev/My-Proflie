@@ -180,6 +180,10 @@ img.img-mosa{
     margin-top: 30px;
 }
 
+.about-bnt{
+    border-style: none;
+}
+
 .butt-style{
     /* background: linear-gradient(90deg, rgba(243,0,255,1) 0%, rgba(0,255,230,1) 50%, rgba(93,66,250,1) 100%); */
     background: rgb(4, 255, 0);
@@ -554,12 +558,14 @@ h3{
 
     .about-bnt{
         position: relative;
-        left: 56.5%;
+        left: 14%;
     }
 
     .about-homepage{
       padding-bottom: 10vh;
     }
+
+
 
 /* ADA gradu home section-------------------------------------------------------------------------------------------------------------------- */
     .ada-grad{
@@ -619,10 +625,6 @@ h3{
         text-align: justify;
     }
 
-    /* .textbox{
-        display: block;
-    } */
-
     .name-inp{
         display: block;      
     }
@@ -634,7 +636,8 @@ h3{
     .touchdiv{
         margin: 0 150px;
     }
-    /* about page -----------------------------------------------------------------------------------------------------------------------------------*/
+
+/* about page -----------------------------------------------------------------------------------------------------------------------------------*/
     .aboutpage{
         padding-top: 60px;
     } 
